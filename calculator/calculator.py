@@ -1,6 +1,7 @@
+# pylint: disable=line-too-long
+# pylint: disable=missing-docstring
 """ This is the increment function"""
 #first import the addition namespace
-from calc import division
 from calc.addition import Addition
 from calc.subtraction import Subtraction
 from calc.multiplication import Multiplication
@@ -11,7 +12,7 @@ class Calculator:
     history = []
     @staticmethod
     def get_result_of_first_calculation_added_to_history():
-        return Calculator.history[0].getResult()
+        return Calculator.history[0].get_result()
     @staticmethod
     def clear_history():
         Calculator.history.clear()
@@ -26,7 +27,7 @@ class Calculator:
     @staticmethod
     def get_result_of_last_calculation_added_to_history():
         # -1 gets the last item added to the list automaticly and you can expect it to have the get result method
-        return Calculator.history[-1].getResult()
+        return Calculator.history[-1].get_result()
     @staticmethod
     def add_number(value_a, value_b):
         """ adds number to result"""
@@ -52,9 +53,8 @@ class Calculator:
         return Calculator.get_result_of_last_calculation_added_to_history()
 
     @staticmethod
-    def division(value_a, value_b):
+    def divide_numbers(value_a, value_b):
         """ division two numbers and store the result"""
         # this is a shorthand way to create the multiplication object and added it the history in one line
         Calculator.add_calculation_to_history(Division.create(value_a, value_b))
         return Calculator.get_result_of_last_calculation_added_to_history()
-
