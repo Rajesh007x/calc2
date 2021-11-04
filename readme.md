@@ -1,6 +1,4 @@
-# Calculator Project Setup 
-[![Build Status](https://app.travis-ci.com/Rajesh007x/calc2.svg?branch=main)](https://app.travis-ci.com/Rajesh007x/calc2)
-
+# Calculator Project Setup
 Part3 - travis badge
 [![Build Status](https://app.travis-ci.com/Rajesh007x/calc2.svg?branch=main)](https://app.travis-ci.com/Rajesh007x/calc2)
 
