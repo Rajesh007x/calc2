@@ -36,5 +36,5 @@ def test_calculator_division_static(clear_history_fixture):
     # pylint: disable=unused-argument,redefined-outer-name
     #using Tuple instead of args because we can pack as much data as we need into the tuple
     my_tuple = (2.0,1.0)
-    Calculator.multiply_numbers(my_tuple)
+    Calculator.division_numbers(my_tuple)
     assert Calculator.get_last_result_value() == 2.0
