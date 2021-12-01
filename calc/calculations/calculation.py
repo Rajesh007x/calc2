@@ -1,3 +1,9 @@
+from abc import ABC, abstractmethod
+#Abstraction of class to get the result
+class Calculation(ABC):
+    @abstractmethod
+    def get_result(self):
+        pass
 """Calculation Class"""
 class Calculation:
     """ calculation abstract base class"""
