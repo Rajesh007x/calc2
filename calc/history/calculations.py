@@ -1,4 +1,7 @@
 """Calculation history Class"""
+import pandas as pd
+
+# pylint: disable=too-few-public-methods,missing-class-docstring,missing-function-docstring
 from calc.calculations.addition import Addition
 from calc.calculations.subtraction import Subtraction
 from calc.calculations.multiplication import Multiplication
@@ -59,3 +62,8 @@ class Calculations:
         """Add a multiplication object to history using factory method create"""
         Calculations.add_calculation(Division.create(values))
         return True
+
+    @staticmethod
+    def write_csv():
+        df = pd.DataFrame(Calculations.history)
+        df.to_csv(index=False)
