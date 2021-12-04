@@ -16,29 +16,50 @@
 
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav">
-            <li class="nav-item active">
-                <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="/calculator">Basic HTML Form</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">WTF Form for flask (To Be Added)</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link disabled" href="#">Disabled</a>
-            </li>
-        </ul>
-    </div>
-</nav>
+<div class="header">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-0">
+        <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" class="img-responsive" alt="logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="history.html">Brief History</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="web.html">Beginning of Web<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/calculator">Basic HTML Form</a>
+                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Python Articles
+                  <span class="badge badge-dark">4</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                  <a class="dropdown-item" href="Article1_RJ.html">Pylint[Tips & Tricks]</a>
+                  <a class="dropdown-item" href="Article2_RJ.html">AAA Testing</a>
+                  <a class="dropdown-item active" href="Article3_RJ.html">OOPs Concept</a>
+                  <a class="dropdown-item" href="SoC.html">Soc[Separation of Concern]</a>
+                </div>
+              </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        More information
+                      <span class="badge badge-dark">3</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="software.html">IBM/Microsoft</a>
+                        <a class="dropdown-item" href="majorEvents.html">Major Events</a>
+                        <a class="dropdown-item" href="1996.html">Year 1995 onwards</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</div>
 
 
 <div id="content">{% block content %}{% endblock %}</div>
@@ -48,10 +69,34 @@
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
 
-<div id="footer">
-    {% block footer %}
-        &copy; Copyright 2021 by <a href="#">Keith Williams</a>.
-    {% endblock %}
+<div class="container-fluid">
+    <footer class="bg-dark text-center text-white">
+        {% block footer %}
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-4">
+                <p>Name: Rajesh Gnanasekaran <br>
+                  Email: rg48@njit.edu</p>
+              </div>
+
+            </div>
+
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright:
+            <a class="text-white" href="#">Top of the page</a>
+          <div>
+            <a class="text-white" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Frajesh007x.github.io%2FinternetHistory%2Fpublic_html%2FArticle3_RJ.html">
+              Article3_Validation</a>
+          </div>
+        </div>
+        <!-- Copyright -->
+        {% endblock %}
+    </footer>
+
 </div>
 </body>
 </html>
