@@ -6,11 +6,15 @@ from flask import render_template, request, flash, redirect, url_for
 class CalculatorController(ControllerBase):
     @staticmethod
     def post():
-        if request.form['value1'] == '' or request.form['value2'] == '':
-            error = 'You must enter a value for value 1 and or value 2'
+        if request.form['value1'] == '':
+            error = ' ----> Please enter valid input for Value 1 field <------ '
+        elif request.form['value2'] == '':
+            error = ' ----> Please enter valid input for Value 2 field <------ '
+        elif request.form['value1'] == '' or request.form['value2'] == '':
+            error = ' ----> Please enter valid input in both the fields <------ '
         else:
-            flash('You successfully calculated')
-            flash('You are awesome')
+            flash('======= > Calculation is done successfully < ============')
+            # flash('You are awesome')
 
             # get the values out of the form
             value1 = request.form['value1']
@@ -23,12 +27,7 @@ class CalculatorController(ControllerBase):
             result = str(Calculator.get_last_result_value())
             return render_template('result.html', value1=value1, value2=value2, operation=operation, result=result)
         return render_template('calculator2.html', error=error)
+
     @staticmethod
     def get():
         return render_template('calculator2.html')
-
-
-
-
-
-
