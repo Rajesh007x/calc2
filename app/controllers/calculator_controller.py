@@ -13,7 +13,7 @@ class CalculatorController(ControllerBase):
         elif request.form['value1'] == '' or request.form['value2'] == '':
             error = ' ----> Please enter valid input in both the fields <------ '
         else:
-            flash('======= > Calculation is done successfully < ============')
+            flash('============================= > Calculation is done successfully < ===============================')
             # flash('You are awesome')
 
             # get the values out of the form
