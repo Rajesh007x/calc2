@@ -1,9 +1,19 @@
 # Calculator Project Setup
 
-To run tests, Lint, and Coverage report use this command:
+## Calculator Flash message display
 
-pytest  --pylint --cov
+-----
+Below flash message is displayed when field 2 is empty
 
-.pylintrc is the config for pylint
-.coveragerc is the config for coverage
-setup.py is a config file for pytest
+![img.png](img.png)
+
+Below flash message is displayed when field 1 is empty
+
+![img_1.png](img_1.png)
+
+----
+When calculation is done successful 
+
+![img_2.png](img_2.png)
+
+----
