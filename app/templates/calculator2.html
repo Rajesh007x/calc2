@@ -12,16 +12,14 @@
 
 {% if error %}
 <div class="alert alert-danger error alert-dismissible fade show" role="alert">
-    <span>{{ message }}</span>
-    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    <!--<span>{{ message }}</span>-->
+    <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+    {{ message }}
     {{ error }}
 </div>
 {% endif %}
 <div class="p-5 my-4 bg-dark text-white rounded-3 info shadow-lg p-3  rounded">
     <div class="container-fluid py-2 mx-4">
-        <div class="row d-flex justify-content-center">
-
-
             <div class="d-flex justify-content-center">
                 <span class="border border-info rounded p-3 p-5 my-4 bg-white text-dark shadow-lg ">
                 <form action="/calculator" method="POST">
@@ -81,7 +79,7 @@
                                     <input class="form-check-input is-invalid" type="checkbox" value=""
                                            id="invalidCheck3" required>
                                         <label class="form-check-label" for="invalidCheck3">
-                                             Agree
+                                             Confirm
                                         </label>
                                         <div class="invalid-feedback">
                                             You must agree before submitting.
@@ -98,8 +96,6 @@
 
             <!--            comment-->
             <!--            comment-->
-
-        </div>
     </div>
 </div>
 {% endblock %}
