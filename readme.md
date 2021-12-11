@@ -1,17 +1,13 @@
 # Calculator Project Setup
 
-## Calculator Flash message display
+## Calculator Table beautify
 
 -----
-Below flash message is displayed when field 2 is empty
+Beautifying the tables displayed 
+adding pagination and search bar
 
+![img_3.png](img_3.png)
 
-Below flash message is displayed when field 1 is empty
-
-
-
-----
-When calculation is done successful 
 
 
 
