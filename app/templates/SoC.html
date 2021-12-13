@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Separation of Concern</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="css/Article4_RJ.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="shortcut icon" type ="images/png" href="images/favicon.png">
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<div class="header">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-0">
+    <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="logo" class="img-responsive" ></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="history.html">Brief History</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="web.html">Beginning of Web<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="evolution.html">Evolution of Internet</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Python Articles
+            <span class="badge badge-dark">4</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+            <a class="dropdown-item" href="Article1_RJ.html">Pylint[Tips & Tricks]</a>
+            <a class="dropdown-item" href="Article2_RJ.html">AAA Testing</a>
+            <a class="dropdown-item" href="Article3_RJ.html">OOPs Concept</a>
+            <a class="dropdown-item active" href="SoC.html">Soc[Separation of Concern]</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            More information
+            <span class="badge badge-dark">3</span>
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" href="software.html">IBM/Microsoft</a>
+            <a class="dropdown-item" href="majorEvents.html">Major Events</a>
+            <a class="dropdown-item" href="1996.html">Year 1995 onwards</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="container">
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+  <div class="bg bg2 bg3"></div>
+  <div class="bg bg"></div>
+  <div class="bg2 bg3"></div>
+  <div class="container-fluid p-3">
+    <div class="row">
+      <div class="col">
+        <h1 class="text-center"><u>Separation of Concern (SoC)</u></h1>
+        <div class="p-5 my-4 bg-dark text-white rounded-3 info shadow-lg p-3 bg-body rounded">
+          <div class="container-fluid py-2 mx-4">
+            <!--<h5 class="mt-0"><u> Pattern for Good Testing</u></h5>-->
+            <p>The separation of concerns (SoC) is one of the most fundamental principles in software development.
+              It is so crucial that 2 out of 5 SOLID principles (Single Responsibility and Interface Segregation) are direct derivations from this concept.
+            </p>
+            <p>
+              The principle is simple: We should not write our program as one solid block, instead, break up the code into chunks that are finalized tiny pieces of the system each able to complete a simple distinct job.<br>
+            </p>
+            <div class="alert alert-danger" role="alert">
+              >> Please select below buttons to get more info about each testing pattern.
+              </div>
+              <br>
+              <a class="btn btn-info btn-lg btn-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                 SoC for programming funtions
+              </a>
+              <br>
+            <div class="collapse" id="collapseExample" >
+              <div class="card card-body bg-dark text-white">
+                If we take the lowest level (the actual programming code), SoC instructs us to avoid writing long complex functions. When the function starts to bloat up in size, this is the red flag that the method is possibly taking care of too many things at once.
+                In such a case SoC pushes us to refactor it, turning into a more laconic and descriptive revision. During this process,
+                parts of the original algorithm get exported and encapsulated in separate smaller functions with a private access level. We gain the code clarity, and chunks of the algorithm eventually become reusable by other parts, even if we initially didn’t expect this to happen.
+              </div>
+              <div class="text-center mb-4">
+                <img src="images/refactor.png" alt="ch"/>
+              </div>
+              <div class="card card-body bg-dark text-white">
+                In the above calculator data if you see , we have done Refactoring where we had more lines of code and we simplified the codes and saved it into
+                one method.<br>
+                We do Refactor as the more lines found in a method, the harder it’s to figure out what the method does. This is the main reason for this refactoring.
+                Besides eliminating rough edges in your code, extracting methods is also a step in many other refactoring approaches.
+              </div>
+            </div>
+
+            <a class="btn btn-info btn-lg btn-block" data-toggle="collapse"  href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample">
+               SoC for the system’s design
+            </a>
+            <div class="collapse" id="collapseExample2">
+              <div class="card card-body bg-dark text-white">
+                The primary goal of the system’s design is to outline the boundaries for the module’s awareness of each other.
+                Every existing architectural pattern provides this strategy. Take we, for example, the Model-View-Controller, we would see that the View is not allowed to interact with the Model directly and should use the Controller as the intermediary.
+              </div>
+              <div class="text-center mb-4">
+                <img src="images/chart.png" alt="ch"/>
+              </div>
+            </div>
+            <br>
+            <a class="btn btn-info btn-lg btn-block" data-toggle="collapse" href="#collapseExample1" role="button" aria-expanded="false" aria-controls="collapseExample">
+               SoC for modules
+            </a>
+            <div class="collapse" id="collapseExample1">
+              <div class="card card-body bg-dark text-white">
+                At a bit higher level, this principle tells us to group the functions under self-contained modules, each responsible for the fulfillment of a single set of tasks that have a clear logical correlation.
+                The process very much resembles what we had to do for functions: estrange less-closely related functionality and group up the features serving the same distinct purpose.
+              </div>
+              <div class="text-center mb-4">
+                <img src="images/grp.png" alt="ch"/>
+              </div>
+              <div class="card card-body bg-dark text-white">
+                In our Calculator as you can see on the left side , we have grouped all our calculator calculation functions together in one module (i.e Calculations )
+                And another stucture name History where we will store all the result of the calculation seperately in that particular python file.
+              </div>
+            </div>
+              <br><br>
+
+            <h5 class="mt-0"> Two types of Separation :</h5>
+            <div id="accordion">
+              <div class="card bg-dark text-white">
+                <div class="card-header" id="headingOne">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link font-weight-bold" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                      Horizontal Separation
+                    </button>
+                  </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div class="card-body bg-dark text-white">
+                    Horizontal Separation of Concerns refers to the process of dividing an application into logical layers of functionally that fulfill the same role within the application.
+                    One common division for graphical user interface applications is the separation of processes into the layers of Presentation, Business, and Resource Access.
+                  </div>
+                </div>
+
+              </div>
+              <div class="card bg-dark text-white">
+                <div class="card-header" id="headingTwo">
+                  <h5 class="mb-0">
+                    <button class="btn btn-link collapsed font-weight-bold" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" >
+                      Vertical Separation
+                    </button>
+                  </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                  <div class="card-body bg-dark text-white">
+                    Vertical Separation of Concerns refers to the process of dividing an application into modules of functionality that relate to the same feature or sub-system within an application. Vertical separation divides the features of an application holistically, associating any interface, business, and resource access concerns within a single boundary.
+                    Separating the features of an application into modules clarifies the responsibly and dependencies of each feature which can aid in testing and overall maintenance. Boundaries may be defined logically to aid in organization, or physically to enable independent development and maintenance.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <br>
+            <h5 class="mt-0"><u> Architecture</u> </h5><br>
+            <p>
+              At an architectural level, separation of concerns is a key component of building layered applications.  In a traditional N-tier application structure, layers might include data access, business logic, and user interface.  More modern N-tier application designs might include a core domain model and separate infrastructure modules in addition to one or more front end services and/or user interfaces.  Web pages, to a greater or lesser degree, separate concerns relating to structure, logic, and formatting through the use of HTML, JavaScript, and CSS.
+              At a lower level, the networking model used by the Internet is broken into a series of layers each with specific concerns and responsibilities, and demonstrates how separation of concerns can be effectively applied.
+            </p>
+            <br>
+
+
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container-fluid">
+    <footer class="bg-dark text-center text-white">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <p>Name: Rajesh Gnanasekaran <br>
+              Email: rg48@njit.edu</p>
+          </div>
+        </div>
+      </div>
+      <!-- Grid container -->
+
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2021 Copyright:
+        <a class="text-white" href="#">Top of the page</a>
+        <div>
+          <a class="text-white" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Frajesh007x.github.io%2FinternetHistory%2Fpublic_html%2FSoC.html">
+            Article4_Validation</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+</body>
+</html>

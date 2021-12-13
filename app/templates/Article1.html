@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Pylint_Article1</title>
+    <link rel="stylesheet" href="css/Article1_RJ.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="shortcut icon" type ="images/png" href="images/favicon.png">
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" class="img-responsive" alt="logo"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link" href="history.html">Brief History<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="web.html">Beginning of Web</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="evolution.html">Evolution of Internet</a>
+            </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Python Articles
+              <span class="badge badge-light">4</span>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+              <a class="dropdown-item active" href="Article1_RJ.html">Pylint[Tips & Tricks]</a>
+              <a class="dropdown-item" href="Article2_RJ.html">AAA Testing</a>
+              <a class="dropdown-item" href="Article3_RJ.html">OOPs Concept</a>
+              <a class="dropdown-item" href="SoC.html">Soc[Separation of Concern]</a>
+            </div>
+          </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    More information
+                  <span class="badge badge-light">3</span>
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="software.html">IBM/Microsoft</a>
+                    <a class="dropdown-item" href="majorEvents.html">Major Events</a>
+                    <a class="dropdown-item" href="1996.html">Year 1995 onwards</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div class="container">
+    <br>
+    <h2 class="text-center" style="color: black">Python Tips & Tricks ( Pylint )</h2>
+    <div class="p-5 my-4 bg-dark text-white rounded-3 info shadow-lg p-3 bg-body rounded">
+        <div class="container-fluid py-2 mx-4">
+            <div class="row mb-4">
+                <div class="col-lg-9">
+                    <h4>Pylint #</h4>
+                    <p>
+                        It’s a static analyzer for Python code. “Static” means that it won’t execute your code,
+                        it will just parse it to find mistakes or things that do not respect a given coding style.
+                        Pylint is capable of emitting very interesting warnings.
+
+                    </p>
+                    <ul>
+                        <li>
+                            For eg : - <br>
+                            # pylint: disable=line-too-long <br>
+                            # pylint: disable=missing-docstring <br>
+                            #pylint: disable=unused-argument <br>
+                            #pylint: disable=redefined-outer-name <br>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-lg-3">
+                  <div class="bg-image hover-zoom">
+                    <img src="images/pylint.png"  alt="pylint">
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-5 my-4 bg-light text-dark rounded-3 info shadow-lg p-3 bg-body rounded">
+        <div class="container-fluid py-2 mx-4">
+            <div class="row mb-4">
+                <div class="col-lg-9">
+                    <h4>Classes and Objects:</h4>
+                    <p>A class is a collection of objects or you can say it is a blueprint of objects defining the common attributes and behavior.
+                        <br>Class is defined under a “Class” Keyword.
+                    </p>
+                    <p>Objects are an instance of a class. It is an entity that has state and behavior.
+                        In a nutshell, it is an instance of a class that can access the data.
+                        <br>Syntax: obj = class1() //calculation(Division.create(values)
+                    </p>
+                </div>
+              <div class="col-lg-3">
+              <!--<div class="zoom">-->
+                <img src="images/class1.jpg" alt="class1" width="180" height="140">
+              <!--</div>-->
+            </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-5 my-4 bg-dark text-white rounded-3 info shadow-lg p-3 bg-body rounded">
+        <div class="container-fluid py-2 mx-4">
+            <div class="row mb-4">
+                <div class="col-lg-9">
+                    <h5 class="mt-0"> Instantiating a Class</h5>
+                    <p>Class objects support two kinds of operations: attribute references and instantiation.<br>
+                        Attribute references use the standard syntax used for all attribute references in Python: obj.name. <br>
+                        Valid attribute names are all the names that were in the class’s namespace when the class object was created.
+                    </p>
+                    <p>
+                        Class instantiation uses function notation. Just pretend that the class object is a parameterless function that returns a new instance of the class.
+                        The instantiation operation (“calling” a class object) creates an empty object. Many classes like to create objects with instances customized to a specific initial state.
+                        Therefore a class may define a special method named __init__()
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <img src="images/init.png" alt="iter" height="140">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-5 my-4 bg-light text-dark rounded-3 info shadow-lg p-3 bg-body rounded">
+        <div class="container-fluid py-2 mx-4">
+            <div class="row mb-4">
+                <div class="col-lg-9">
+                    <h4>Iterators</h4>
+                    <p>The use of iterators pervades and unifies Python. Behind the scenes, the for statement calls iter() on the container object.
+                        <br>The function returns an iterator object that defines the method which accesses elements in the container one at a time.
+                        When there are no more elements, raises a StopIteration exception which tells the for loop to terminate.
+                    </p>
+                </div>
+                <div class="col-lg-3">
+                    <img src="images/iter.png" alt="iter" width="180" height="140">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="p-5 my-4 bg-dark text-white rounded-3 info shadow-lg p-3 bg-body rounded">
+        <div class="container-fluid py-2 mx-4">
+            <!--<div class="row mb-4">-->
+               <!-- <div class="col-lg-9">-->
+                    <h5 class="mt-0"> Factory Method </h5>
+                    <p>Factory Method is a creational design pattern used to create concrete implementations of a common interface.
+                        It separates the process of creating an object from the code that depends on the interface of the object.
+                        Using the Factory method, we have the best ways to create an object. Here, objects are created without exposing the logic to the client, and for creating the new type of object, the client uses the same common interface.
+                    </p>
+                    <p>
+                        <b>Problems we face without Factory Method:</b><br>
+                        Suppose we have created an app whose main purpose is to translate one language into another and currently our app works with 10 languages only. Now our app has become widely popular among people but the demand has grown suddenly to include 5 more languages.
+                        It’s a piece of great news! only for the owner not for the developers. They have to change the whole code because now most part of the code is coupled with the existing languages only and that’s why developers have to make changes to the entire codebase which is really a difficult task to do.
+                    </p>
+                    <p>
+                        <b> Solution: </b><br>
+                        Is to replace the straightforward object construction calls with calls to the special factory method. Actually, there will be no difference in the object creation but they are being called within the factory method.
+                    </p>
+            <!-- </div>-->
+            <!--</div>-->
+        </div>
+    </div>
+
+    <div class="p-5 my-4 bg-light text-dark rounded-3 info shadow-lg p-3 bg-body rounded">
+        <div class="container-fluid py-2 mx-4">
+            <!--<div class="row mb-4">-->
+                <!--<div class="col-lg-9">-->
+                    <h4>Fixtures</h4>
+                    <p>“Fixtures”, in the literal sense, are each of the arrange steps and data. They’re everything that test needs to do its thing.
+                        In pytest, “fixtures” are functions you define that serve this purpose.
+                        But they don’t have to be limited to just the arrange steps.
+                        They can provide the act step, as well, and this can be a powerful technique for designing more complex tests, especially given how pytest’s fixture system works.
+                    </p>
+                    <p>
+                        Tests don’t have to be limited to a single fixture, either. They can depend on as many fixtures as you want, and fixtures can use other fixtures, as well.
+                        This is where pytest’s fixture system really shines.
+                    </p>
+
+                <!--</div> -->
+            <!--</div>-->
+        </div>
+    </div>
+
+</div>
+
+<div class="container-fluid">
+
+    <footer class="bg-dark text-center text-white">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <p>Name: Rajesh Gnanasekaran <br>
+                        Email: rg48@njit.edu</p>
+                </div>
+
+            </div>
+
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2021 Copyright
+            <br>
+            <a class="text-white" href="#">Top of the Page</a>
+          <div>
+            <a class="text-white" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Frajesh007x.github.io%2FinternetHistory%2Fpublic_html%2FArticle1_RJ.html">
+              Article1_Validation</a>
+          </div>
+
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+</div>
+</body>
+</html>

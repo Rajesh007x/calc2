@@ -1,15 +1,88 @@
 {% extends "base.html" %}
 {% block title %}Index{% endblock %}
 {% block head %}
-    {{ super() }}
-    <style type="text/css">
-        .important { color: #336699; }
-    </style>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}"/>
+{{ super() }}
+<style type="text/css">
+    .important {
+        color: #336699;
+    }
+
+    .index {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    .para {
+        font-size: 50px;
+    }
+</style>
 {% endblock %}
 {% block content %}
-    <h1>Index I should see this change with a page refresh</h1>
-    <p class="important">
-      Welcome to my awesome homepage.
-        <img src="{{ url_for('static', filename='images/sample.jpeg') }}">
-    </p>
+<!--<div class="container-fluid index">-->
+<!--    <div class="row">-->
+<!--        <div class="col">-->
+<!--            <div class="d-flex justify-content-center align-items-center">-->
+<!--                <p class="important para">-->
+<!--                    Welcome to my Calculator.-->
+<!--                    &lt;!&ndash;                <img src="{{ url_for('static', filename='images/sample.jpeg') }}">&ndash;&gt;-->
+<!--                </p>-->
+<!--            </div>-->
+<!--        </div>-->
+<!--    </div>-->
+<!--</div>-->
+
+<div class="container-fluid">
+    <div class="row max-height justify-content-center align-items-center">
+        <div class="col-10 mx-auto banner text-center">
+                <h1 class="text-capitalize">History Of Internet</h1>
+                <p>
+                    The Internet, a loosely-organized international collaboration of autonomous, interconnected networks,
+                    supports host-to-host communication through voluntary adherence to open protocols and procedures
+                    defined by Internet Standards
+                </p>
+            <a href="/history" class="btn btn-success text-uppercase my-2">explore</a>
+        </div>
+</div>
+</div>
+
+
+
+<div class="container-fluid py-5 mx-2">
+    <div class="row">
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/card1.jpg') }}" class="card-img-top" alt="card1">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-weight: bold">Internet</h5>
+                    <p class="card-text">The Internet has revolutionized the computer and communications world like nothing before. The invention of the telegraph, telephone, radio,
+                        and computer set the stage for this unprecedented integration of capabilities.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/card2.jpeg') }}" class="card-img-top" alt="card2">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-weight: bold">Browser</h5>
+                    <p class="card-text">1990 – The WorldWideWeb (not to be confused with the World Wide Web) was the first browser ever created by W3C Director Tim Berners-Lee,
+                        then renamed Nexus to differentiate from the actual World Wide Web.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
+            <div class="card">
+                <img src="{{ url_for('static', filename='images/yahoo.jpg') }}" class="card-img-top" alt="yahoo">
+                <div class="card-body">
+                    <h5 class="card-title" style="font-weight: bold">Search Engine</h5>
+                    <p class="card-text">Beginning with Archie in 1990, considered the first search engine, moving on to Excite and Infoseek, by the mid 90s there was a veritable flood of search engines,
+                        particularly after Google showed how it should be done in 1996.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 {% endblock %}

@@ -1,18 +1,19 @@
-"""Division Class"""
+"""Division class"""
 import pprint
-
 from calc.calculations.calculation import Calculation
 
+
+
 class Division(Calculation):
-    """division calculation object"""
+
+    """Division calculation object"""
     def get_result(self):
         """get the division results"""
         initial = 1.0
         result = 0
         for value in self.values:
             pprint.pprint(value)
-            pprint.pprint(result)
-            if result == 0:
+            if result==0:
                 result = value / initial
             else:
                 try:
