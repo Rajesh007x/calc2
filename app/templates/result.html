@@ -12,7 +12,7 @@
 <div class="container-fluid res">
     <div class="row">
         <div class="col">
-            <h1>Calculation Result</h1>
+            <h2 class="text-center text-light"><u>Calculation Result</u></h2><br>
             {% with messages = get_flashed_messages() %}
             {% if messages %}
             {% for message in messages %}
@@ -22,7 +22,7 @@
             {% endfor %}
             {% endif %}
             {% endwith %}
-
+<link rel="stylesheet" href="{{ url_for('static', filename='css/Article1_RJ.css') }}">
             <div class="container">
                 <table class="table table-striped table-dark">
                     <thead>

@@ -4,57 +4,56 @@
     <meta charset="UTF-8">
     <title>AAA testing in Python</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/Article2_RJ.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Article2_RJ.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="shortcut icon" type ="images/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="shortcut icon" type="images/png" href="images/favicon.png">
 </head>
 <body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
 
 <div class="header">
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark my-0">
-        <a class="navbar-brand" href="index.html"><img src="images/logo.jpg" alt="logo" class="img-responsive" ></a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="index.html"><img src="{{ url_for('static', filename='images/logo.jpg') }}"
+                                                       alt="logo" class="img-responsive"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="history.html">Brief History</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="web.html">Beginning of Web<span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="evolution.html">Evolution of Internet</a>
-                </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Python Articles
-                  <span class="badge badge-light">4</span>
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
-                  <a class="dropdown-item" href="Article1_RJ.html">Pylint[Tips & Tricks]</a>
-                  <a class="dropdown-item active" href="Article2_RJ.html">AAA Testing</a>
-                  <a class="dropdown-item" href="Article3_RJ.html">OOPs Concept</a>
-                  <a class="dropdown-item" href="SoC.html">Soc[Separation of Concern]</a>
-                </div>
-              </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        More information
-                      <span class="badge badge-light">3</span>
+                    <a class="nav-link" href="/calculator">Calculator
+                    <span class="badge badge-danger">NEW</span>
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="software.html">IBM/Microsoft</a>
-                        <a class="dropdown-item" href="majorEvents.html">Major Events</a>
-                        <a class="dropdown-item" href="1996.html">Year 1995 onwards</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false">
+                        Python Articles
+                        <span class="badge badge-dark">4</span>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink1">
+                        <a class="dropdown-item" href="/article1">Pylint[Tips & Tricks]</a>
+                        <a class="dropdown-item" href="/article2">AAA Testing</a>
+                        <a class="dropdown-item" href="/article3">OOPs Concept</a>
+                        <a class="dropdown-item" href="/article4">Soc[Separation of Concern]</a>
                     </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/history">History</a>
                 </li>
             </ul>
         </div>
@@ -64,134 +63,163 @@
     <div class="bg"></div>
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
-<div class="container-fluid p-3">
-    <div class="row">
-        <div class="col">
-            <h1 class="text-center"><u>Arrange-Act-Assert (AAA) Testing</u></h1>
-            <div class="p-5 my-4 bg-dark text-white rounded-3 info shadow-lg p-3 bg-body rounded">
-                <div class="container-fluid py-2 mx-4">
-                    <h5 class="mt-0"><u> Pattern for Good Testing</u></h5>
-                    <p>A test is a procedure that exercises a behavior to determine if the behavior functions correctly.
-                        There are several different kinds of tests, like unit tests, integration tests, or end-to-end tests, but all functional tests do the same basic thing: they try something and report PASS or FAIL.
-                    </p>
-                    <p>
-                        Testing provides an empirical feedback loop for development. That’s how testing keeps us safe. With tests, we know when things break.
-                        Without tests, coding can be dangerous. We don’t want to deploy big ol’ bugs!<br>
+    <div class="container-fluid p-3">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center"><u>Arrange-Act-Assert (AAA) Testing</u></h1>
+                <div class="p-5 my-4 bg-dark text-white rounded-3 info shadow-lg p-3 bg-body rounded">
+                    <div class="container-fluid py-2 mx-4">
+                        <h5 class="mt-0"><u> Pattern for Good Testing</u></h5>
+                        <p>A test is a procedure that exercises a behavior to determine if the behavior functions
+                            correctly.
+                            There are several different kinds of tests, like unit tests, integration tests, or
+                            end-to-end tests, but all functional tests do the same basic thing: they try something and
+                            report PASS or FAIL.
+                        </p>
+                        <p>
+                            Testing provides an empirical feedback loop for development. That’s how testing keeps us
+                            safe. With tests, we know when things break.
+                            Without tests, coding can be dangerous. We don’t want to deploy big ol’ bugs!<br>
 
 
-                    </p>
-                  <div class="alert alert-success" role="alert">
+                        </p>
+                        <div class="alert alert-success" role="alert">
 
-                       >> Please select below buttons to get more info about each testing pattern.
-                    </div>
-                  <br>
+                            >> Please select below buttons to get more info about each testing pattern.
+                        </div>
+                        <br>
 
-                        <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Arrange</a>
-                        <button class="btn btn-success" type="button" data-toggle="collapse" data-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Act</button>
-                        <button class="btn btn-danger" type="button" data-toggle="collapse" data-target="#multiCollapseExample3" aria-expanded="false" aria-controls="multiCollapseExample3">Assert</button>
+                        <a class="btn btn-primary" data-toggle="collapse" href="#multiCollapseExample1" role="button"
+                           aria-expanded="false" aria-controls="multiCollapseExample1">Arrange</a>
+                        <button class="btn btn-success" type="button" data-toggle="collapse"
+                                data-target="#multiCollapseExample2" aria-expanded="false"
+                                aria-controls="multiCollapseExample2">Act
+                        </button>
+                        <button class="btn btn-danger" type="button" data-toggle="collapse"
+                                data-target="#multiCollapseExample3" aria-expanded="false"
+                                aria-controls="multiCollapseExample3">Assert
+                        </button>
 
-                    <div class="row">
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample1">
-                                <div class="card card-body bg-dark text-white">
-                                    Arrange inputs and targets. Arrange steps should set up the test case. Does the test require any objects or special settings? Does it need to prep a database? Does it need to log into a web app? Handle all of these operations at the start of the test.
+                        <div class="row">
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="multiCollapseExample1">
+                                    <div class="card card-body bg-dark text-white">
+                                        Arrange inputs and targets. Arrange steps should set up the test case. Does the
+                                        test require any objects or special settings? Does it need to prep a database?
+                                        Does it need to log into a web app? Handle all of these operations at the start
+                                        of the test.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="multiCollapseExample2">
+                                    <div class="card card-body bg-dark text-white">
+                                        Act on the target behavior. Act steps should cover the main thing to be tested.
+                                        This could be calling a function or method, calling a REST API, or interacting
+                                        with a web page. Keep actions focused on the target behavior.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="collapse multi-collapse" id="multiCollapseExample3">
+                                    <div class="card card-body bg-dark text-white">
+                                        Assert expected outcomes. Act steps should elicit some sort of response. Assert
+                                        steps verify the goodness or badness of that response. Sometimes, assertions are
+                                        as simple as checking numeric or string values. Other times, they may require
+                                        checking multiple facets of a system. Assertions will ultimately determine if
+                                        the test passes or fails.
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample2">
-                                <div class="card card-body bg-dark text-white">
-                                    Act on the target behavior. Act steps should cover the main thing to be tested. This could be calling a function or method, calling a REST API, or interacting with a web page. Keep actions focused on the target behavior.
-                                </div>
-                            </div>
+                        <br>
+
+                        <h5 class="mt-0"><u> Unit Testing :</u></h5>
+
+                        <div class="text-center mb-4">
+                            <img src="{{ url_for('static', filename='images/Unit_Testing1.png') }}" alt="yahoo"/>
                         </div>
-                        <div class="col">
-                            <div class="collapse multi-collapse" id="multiCollapseExample3">
-                                <div class="card card-body bg-dark text-white">
-                                    Assert expected outcomes. Act steps should elicit some sort of response. Assert steps verify the goodness or badness of that response. Sometimes, assertions are as simple as checking numeric or string values. Other times, they may require checking multiple facets of a system. Assertions will ultimately determine if the test passes or fails.
-                                </div>
-                            </div>
+                        <p>
+                            The Arrange step creates a variable named “my_tuple” for testing.<br>
+                            The Act step calls the “division_numbers” function using the “Calculator” variable and
+                            stores the returned value in a variable named “answer.”<br>
+                            The Assert step verifies that “get_last_result_value” is equal to the expected value.
+                        </p>
+                        <br>
+                        <h5 class="mt-0"><u>Importance of AAA testing </u></h5>
+                        <div class="spinner-border text-danger" role="status">
+                            <span class="visually-hidden"></span>
                         </div>
+                        <p>
+                            It’s important to differentiate the system under test from its dependencies, like when there
+                            are quite a few of them,
+                            and that you don’t need to spend too much time figuring out who’s who in the test.</p>
+                        <p>
+                            As it’s important to set the system under test apart from its dependencies, it’s also
+                            important to differentiate the three sections from each other, and it prevents spending too
+                            much time figuring out what section this particular line in the test belongs to.
+                            Putting // Arrange, // Act, and // Assert comments before the beginning of each section is
+                            one way to do that. Another way is to separate the sections with empty lines
+                        </p>
+                        <br>
+                        <h5 class="mt-0"><u> Use of external Data for Testing </u></h5>
+                        <p>
+                            Python unittest library is used to run the unit tests for Python classes and functions. It
+                            is a built-in library provided by Python</p>
+
+                        <div class="text-center mb-4">
+                            <img src="{{ url_for('static', filename='images/external.png') }}" alt="external"/>
+                        </div>
+                        <p>
+                            We can use pandas library function to read a csv file.
+                            Using pandas csv file can be read and we can perform calculation by reading all the inputs
+                            preseint in that csv file.
+                        </p>
+                        <div class="text-center mb-4">
+                            <img src="{{ url_for('static', filename='images/pandas.png') }}" alt="external"/>
+                        </div>
+                        <p>
+                            In our Calculator program , we can use external csv as located below to get input from the
+                            user ,
+                            in our csv file we have inputted two values , and will verify with the result .
+                        </p>
+                        <div class="text-center mb-4">
+                            <img src="{{ url_for('static', filename='images/exter.png') }}" alt="external"/>
+                        </div>
+
                     </div>
-                    <br>
-
-                    <h5 class="mt-0"><u> Unit Testing :</u> </h5>
-
-                    <div class="text-center mb-4">
-                        <img src="images/Unit_Testing1.png" alt="yahoo"/>
-                    </div>
-                    <p>
-                        The Arrange step creates a variable named “my_tuple” for testing.<br>
-                        The Act step calls the “division_numbers” function using the “Calculator” variable and stores the returned value in a variable named “answer.”<br>
-                        The Assert step verifies that “get_last_result_value” is equal to the expected value.
-                    </p>
-                    <br>
-                    <h5 class="mt-0"><u>Importance of AAA testing </u> </h5>
-                  <div class="spinner-border text-danger" role="status">
-                    <span class="visually-hidden"></span>
-                  </div>
-                    <p>
-                        It’s important to differentiate the system under test from its dependencies, like when there are quite a few of them,
-                        and that you don’t need to spend too much time figuring out who’s who in the test.</p>
-                    <p>
-                        As it’s important to set the system under test apart from its dependencies, it’s also important to differentiate the three sections from each other, and it prevents spending too much time figuring out what section this particular line in the test belongs to.
-                        Putting // Arrange, // Act, and // Assert comments before the beginning of each section is one way to do that. Another way is to separate the sections with empty lines
-                    </p>
-                    <br>
-                    <h5 class="mt-0"><u> Use of external Data for Testing </u> </h5>
-                    <p>
-                      Python unittest library is used to run the unit tests for Python classes and functions. It is a built-in library provided by Python</p>
-
-                  <div class="text-center mb-4">
-                    <img src="images/external.png" alt="external"/>
-                  </div>
-                  <p>
-                    We can use pandas library function to read a csv file.
-                    Using pandas csv file can be read and we can perform calculation by reading all the inputs preseint in that csv file.
-                  </p>
-                  <div class="text-center mb-4">
-                    <img src="images/pandas.png" alt="external"/>
-                  </div>
-                  <p>
-                    In our Calculator program , we can use external csv as located below to get input from the user ,
-                    in our csv file we have inputted two values , and will verify with the result .
-                  </p>
-                  <div class="text-center mb-4">
-                    <img src="images/exter.png" alt="external"/>
-                  </div>
-
                 </div>
+
+
             </div>
-
-
+        </div>
     </div>
-</div>
-</div>
 
 
-<div class="container-fluid">
-    <footer class="bg-dark text-center text-white">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4">
-                    <p>Name: Rajesh Gnanasekaran <br>
-                        Email: rg48@njit.edu</p>
+    <div class="container-fluid">
+        <footer class="bg-dark text-center text-white">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <p>Name: Rajesh Gnanasekaran <br>
+                            Email: rg48@njit.edu</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <!-- Grid container -->
+            <!-- Grid container -->
 
-        <!-- Copyright -->
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-            © 2021 Copyright:
-            <a class="text-white" href="#">Top of the page</a>
-          <div>
-            <a class="text-white" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Frajesh007x.github.io%2FinternetHistory%2Fpublic_html%2FArticle2_RJ.html">
-              Article2_Validation</a>
-          </div>
-        </div>
-    </footer>
-</div>
+            <!-- Copyright -->
+            <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+                © 2021 Copyright:
+                <a class="text-white" href="#">Top of the page</a>
+                <div>
+                    <a class="text-white"
+                       href="https://github.com/Rajesh007x/calc2/tree/project3_refactor">
+                        Github</a>
+                </div>
+            </div>
+        </footer>
+    </div>
 </div>
 </body>
 </html>
