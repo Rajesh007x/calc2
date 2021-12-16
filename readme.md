@@ -1,6 +1,6 @@
 # Calculator Project Setup
 
-####Complete calculator project with articles of python
+Complete calculator project with articles of python
 
 -----
 Youtuble link of demo : [Youtube](https://www.youtube.com/watch?v=RvJ665Vppqo&ab_channel=RajeshSekaranG)
