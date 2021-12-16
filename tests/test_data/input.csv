@@ -4,4 +4,5 @@ value_1,value_2,result,operation performed
 5,10,15.0,addition
 45,55,100.0,addition
 12,20,240.0,multiplication
-1,1,-2.0,subtraction
+10,5,15.0,addition
+100,50,5000.0,multiplication
